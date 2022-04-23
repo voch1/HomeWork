@@ -9,10 +9,12 @@ public class Bowl {
         System.out.printf("Food increased by %d pts, there is now %d\n", amount, foodAmount);
     }
     public boolean decreaseFood(int amount){
-        this.foodAmount -= amount;
         if (foodAmount < 0){
             return false;
-        } return true;
+        }else{
+            this.foodAmount -= amount;
+        }
+        return true;
     }
 
     public int getFoodAmount() {
